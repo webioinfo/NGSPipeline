@@ -4,7 +4,12 @@
 
 ### Linux 安装
 
+- 如何在 Windows 系统中安装 Linux 子系统（微软官方教程）：https://learn.microsoft.com/en-us/windows/wsl/install.
+
 ### conda 安装
+
+- conda user guide: https://docs.conda.io/projects/conda/en/latest/user-guide/index.html
+- conda installation (recommend Miniconda): https://docs.conda.io/en/latest/miniconda.html
 
 ### NGS 分析流程概论
 
