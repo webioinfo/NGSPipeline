@@ -18,6 +18,8 @@
 
 ### NGS 分析流程概论
 
+- Illumina Sequencing Overview: https://www.ogc.ox.ac.uk/wp-content/uploads/2017/09/Illumina_Sequencing_Overview_15045845_D.pdf
+
 #### 测序种类
 
 - target, WES, WGS
