@@ -11,6 +11,11 @@
 - conda user guide: https://docs.conda.io/projects/conda/en/latest/user-guide/index.html
 - conda installation (recommend Miniconda): https://docs.conda.io/en/latest/miniconda.html
 
+### 软件环境安装
+
+- Python: `conda install python`
+- R: `conda install R`
+
 ### NGS 分析流程概论
 
 #### 测序种类
