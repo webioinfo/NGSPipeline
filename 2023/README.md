@@ -11,6 +11,13 @@
 - conda user guide: https://docs.conda.io/projects/conda/en/latest/user-guide/index.html
 - conda installation (recommend Miniconda): https://docs.conda.io/en/latest/miniconda.html
 
+conda 安装完成后需要添加两个常用的channel：
+
+```
+conda config --add channels conda-forge
+conda config --add channels bioconda
+```
+
 ### 软件环境安装
 
 - Python: `conda install python`
@@ -35,10 +42,12 @@
 
 ### FASTQ 文件格式
 
+- FASTQ files explained: https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html
+
 ### FASTQ 文件处理
 
-- seqtk
-- fastp
+- seqtk: `conda install seqtk`
+- fastp: `conda install fastp`
 
 ## 3. BAM 文件
 
