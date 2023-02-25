@@ -46,22 +46,28 @@ conda config --add channels bioconda
 
 ### FASTQ 文件处理
 
-- seqtk: `conda install seqtk`
-- fastp: `conda install fastp`
+- seqtk: `conda install seqtk`; https://github.com/lh3/seqtk
+- fastp: `conda install fastp`; https://github.com/OpenGene/fastp
 
 ## 3. BAM 文件
 
+### 序列比对
+
+Introduction to Sequence Alignment: https://learn.gencore.bio.nyu.edu/wp-content/uploads/2018/01/IntroSeqAlign2018.pdf
+
+### NGS 比对工具
+
+- bwa: `conda install bwa`; https://bio-bwa.sourceforge.net/bwa.shtml
+- STAR: `conda install star`; https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf
+- minimap2: `conda install minimap2`; https://github.com/lh3/minimap2/blob/master/README.md
+
 ### BAM 文件格式
 
-### 比对工具
-
-- bwa
-- STAR
-- minimap2
+- Sequence Alignment/Map Format Specification (可以直接查看 1.4 小节 "The alignment section: mandatory fields"): https://samtools.github.io/hts-specs/SAMv1.pdf
 
 ### BAM 文件处理
 
-samtools
+samtools: `conda install 'samtools>=1.10'`; http://www.htslib.org/doc/samtools.html
 
 ## 4. VCF 文件
 
