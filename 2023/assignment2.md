@@ -1,6 +1,6 @@
 ## NGSPipeline Assignment2
 
-### Q1 - 请简述 FASTQ 文件格式
+### Q1 - 请简述 FASTQ 文件格式（列出重点，不需要长篇大论）
 
 ### Q2 - reads QC
 
