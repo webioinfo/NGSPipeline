@@ -1,3 +1,4 @@
+#!/bin/bash
 while read line
 do
         n=$[$n+1]
