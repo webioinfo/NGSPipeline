@@ -1,0 +1,11 @@
+while read line
+do
+        n=$[$n+1]
+        if [ $[$n%2] -eq 0 ] ;then
+                #echo ${line:6} >> delete-adapter.fq
+                echo ${line#GAGGGTAATTTT}
+        else
+                #echo $line >> delete-adapter.fq
+                echo $line
+        fi
+done < test.fq
