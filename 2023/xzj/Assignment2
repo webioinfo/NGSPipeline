@@ -1,12 +1,23 @@
+No.1
+FASTQ格式储存的序列信息，每1条reads的信息，可以分成4行
+第1行主要储存序列测序时的信息,@开始的标记符号
+第2行是测序得到的序列信息，一般用ATCGN来表示，其中N表示荧光信号干扰无法判断到底是哪个碱基。
+第3行以“+”开始，可以储存一些附加信息，一般是空的。
+第4行储存的是质量信息，与第2行的碱基序列是一一对应的，其中的每一个符号对应的ASCII值成为phred值，可以简单理解为对应位置碱基的质量值，越大说明测序的质量越好。不同的版本对应的不同。
+
+No.2
 #!/bin/bash
-while read line
+gcat test.fq.gz | while read line
 do
         n=$[$n+1]
         if [ $[$n%2] -eq 0 ] ;then
-                #echo ${line:6} >> delete-adapter.fq
-                echo ${line#GAGGGTAATTTT}
+                echo ${line:6} 
+                #echo ${line#GAGGGTAATTTT}
+        elif [ $[$n%4] -eq 0 ] ;then
         else
-                #echo $line >> delete-adapter.fq
+                #echo $line
                 echo $line
         fi
-done < test.fq
+done 
+
+No.3
