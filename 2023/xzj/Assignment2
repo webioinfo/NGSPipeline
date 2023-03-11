@@ -19,7 +19,7 @@ do
                 echo $line
         fi
 done 
-
+新的
 zcat test.fq.gz | while read line
 do
   
