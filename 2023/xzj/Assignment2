@@ -39,4 +39,44 @@ do
 done
 
 No.3
+#!/bin/bash
+zcat test.fq.gz | while read line
+do
+        n=$[$n+1]
+        #echo $n
+
+        if [ $n -eq 1 ] ;then
+
+                l1=$line
+
+                #echo ${line#GAGGGTAATTTT}
+
+        elif    [ $n -eq 2 ] ;then
+
+                l2=$line
+
+        elif    [ $n -eq 3 ] ;then
+
+                l3=$line
+
+        else
+                l4=$line
+                n=0
+                if [ $n -eq 0 ];then
+                        #p=`echo -n  $l4 | sed 's/[^@A]*//g' `
+                        #echo $p
+                        num=`echo -n  $l4 | sed 's/[^@A]*//g' | wc -c`
+                        #echo $num
+                        if [ $[$num / ${#l4} * 100] -le 10 ];then
+                                echo $l1
+                                echo $l2
+                                echo $l3
+                                echo $l4
+
+                        fi
+                fi
+
+
+        fi
+
 
