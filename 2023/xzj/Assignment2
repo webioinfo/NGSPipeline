@@ -20,4 +20,23 @@ do
         fi
 done 
 
+zcat test.fq.gz | while read line
+do
+  
+        if [ ${line:0:1} == "+" ] ;then
+              
+                echo $line
+                
+        elif    [ ${line:0:4} == "@HWI" ] ;then
+
+                echo $line
+        elif    [ ${line:0:6} == "GAGGGT" ] ;then
+
+                echo ${line:6}
+        else
+                echo ${line:6}
+        fi
+done
+
 No.3
+
